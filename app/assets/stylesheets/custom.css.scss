@@ -1,0 +1,27 @@
+body {
+  background: image-url("background.jpg") no-repeat center center fixed;
+  
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    height: 350px;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.1em;
+    background: transparent;
+    text-align: center;
+    a{
+      font-style: underline;
+    }
+}
+
+.center-block{
+	text-align: center;
+}
+
+.alert{
+  z-index: 100;
+  position: fixed; top: 0%; left: 10%;
+  width: 80%;
+  text-align: center;
+}

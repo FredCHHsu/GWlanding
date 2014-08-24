@@ -1,5 +1,6 @@
 $(function() {
-  $(".alert").hide().fadeIn('normal', function() {
-    $(this).delay(1000).fadeOut();
+	$(".error").hide();
+  $(".alert").hide().fadeIn('slow', function() {
+    $(this).delay(1000).fadeOut('slow');
   });
 });

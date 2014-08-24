@@ -8,7 +8,7 @@ class UsersController < ApplicationController
       flash[:success] = '感謝您的回覆！'
       redirect_to root_path
     else
-      flash.now[:danger] = 'somthing wrong'
+      #flash.now[:danger] = 'somthing wrong'
       render :new
     end  
     

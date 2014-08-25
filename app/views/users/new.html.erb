@@ -1,29 +1,30 @@
-<div class="container col-lg-12">
-	<div class="jumbotron">
-			<h1>Guest What</h1>
-			<p>
+<div class="bg">
+	<div class="jumbotron headline">
+		<h1>Guest What</h1>
+		<p>
 			無論您想過過開餐廳的乾癮<br>
 			或想試試作客他人餐桌的快樂<br>
 			只要您期待敲敲鍵盤就能參與美食饗宴<br>
 			您就是我們服務的對象
-			</p>
+		</p>
 
-			<div class="col-sm-6 col-sm-offset-3">
-				<%= simple_form_for @user do |f| %>
-					<div class="input-group">
-						<%= f.input :email, label: false, input_html: { class: "form-control", placeholder: "請留下您的Email，讓我們上市時立刻通知您" } %>
-						<span class="input-group-btn">
-							<%= f.submit "記得通知我！", class: "btn btn-primary"%>
-						</span>
-					</div>
-				<% end %>
+		<div class="col-sm-6 col-sm-offset-3">
+			<%= simple_form_for @user do |f| %>
+			<div class="input-group">
+				<%= f.input :email, label: false, input_html: { class: "form-control", placeholder: "請留下您的Email，讓我們上市時立刻通知您" } %>
+				<span class="input-group-btn">
+					<%= f.submit "記得通知我！", class: "btn btn-primary"%>
+				</span>
 			</div>
-			<%= error_message(@user) %>
+			<% end %>
+		</div>
+		<%= error_message(@user) %>
 
-  		<div class="col-sm-12">	
-				<p>或者<br>
-  				先來看看我們的<a href="https://www.facebook.com/HomeRestaurant2014">粉絲團</a>
-  			</p>
-  		</div>
+		<div class="col-sm-12">	
+			<p>或者<br>
+				先來看看我們的<a href="https://www.facebook.com/HomeRestaurant2014">粉絲團</a>
+			</p>
+		</div>
 	</div>
+	<%= render "static_pages/how_gw_works" %>
 </div>

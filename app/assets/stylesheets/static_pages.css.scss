@@ -1,3 +1,23 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.step{
+	color: darkorange;
+  text-align: center;
+}
+
+.step_title{
+}
+
+.step_content{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 8px;
+
+ 	border: solid 5px white;
+	border-radius: 5px;
+	box-shadow: 5px 5px 4px rgba(20%,20%,20%,0.5);
+
+	background-color: none;
+}
